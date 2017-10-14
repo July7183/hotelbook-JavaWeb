@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>酒店管理系统</title>
+    <link rel='Shortcut Icon' type='image/x-icon' href='img/windows.ico'>
+    <link rel="stylesheet" type="text/css" href="css/register-login.css">
+</head>
+<body>
+
+<div id="box"></div>
+
+<div class="cent-box">
+    <div class="cent-box-header">
+        <h1 class="main-title">HotelBook</h1>
+        <h2 class="sub-title">酒店管理系统</h2>
+    </div>
+
+    <div class="cont-main clearfix">
+
+        <div class="login form">
+            <div class="group">
+                <div class="group-ipt loginName">
+                    <input type="text" name="loginName" id="loginName" class="ipt" placeholder="输入您的用户名" required>
+                </div>
+                <div class="group-ipt loginPwd">
+                    <input type="password" name="loginPwd" id="loginPwd" class="ipt" placeholder="输入您的登录密码" required>
+                </div>
+            </div>
+
+            <div class="button" id="btnLogin">
+                <button type="submit" class="login-btn register-btn button" id="embed-submit">登录</button>
+            </div>
+        </div>
+
+        <div class="remember clearfix">
+            <label class="remember-me"><a href="#">获取帮助</a></label>
+            <label class="forgot-password"><a href="#">忘记密码？</a></label>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2017 <a href="#">HotelBook System</a></p>
+</div>
+
+<script type="text/javascript" src='js/particles.js'></script>
+<script type="text/javascript" src='js/background.js'></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="layui-v2.1.5/layui/layui.js"></script>
+
+<script>
+
+    layui.use(['layer'], function(){
+
+        var layer = layui.layer;
+
+        $(document).ready(function () {
+
+            //alert("网页加载完毕");
+
+            //按钮点击事件
+            $('#btnLogin').click(function () {
+
+                //alert("按钮被点击");
+
+                var loginName = $('#loginName').val();
+                var loginPwd = $('#loginPwd').val();
+                //alert(loginName+loginPwd);
+
+                if(loginName == "")
+                    layer.tips("请输入用户名", "#loginName");
+                else if(loginPwd == "")
+                    layer.tips("请输入密码", "#loginPwd");
+                else if(loginName != "root")
+                    layer.msg("用户名不存在");
+                else if(loginPwd != "toor")
+                    layer.msg("密码不正确");
+                else {
+                    layer.msg('登录成功', {
+                        icon: 16
+                        ,shade: 0.01
+                    });
+                    setTimeout(function() {
+                        location.href = 'main.html';
+                    }, 1000);
+                }
+
+
+            });
+
+        });
+
+    });
+
+
+
+    
+</script>
+
+</body>
+</html>
