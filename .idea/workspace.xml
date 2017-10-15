@@ -8,166 +8,112 @@
   <component name="ChangeListManager">
     <list id="afcc8ac2-025a-44b0-bf96-6d06899bbc36" name="Add description #-#" comment="" />
     <list default="true" id="85976a7a-d337-49a7-901d-13be5ff6a5e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/hotel.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/main.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/font-awesome-4.7.0/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/layer.full.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/mobile/layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/mobile/need/layer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/skin/default/icon-ext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/skin/default/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/skin/default/layer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/skin/default/loading-0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/skin/default/loading-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/component/layer-v3.0.3/layer/skin/default/loading-2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/avatar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/baidu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/blogger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/demo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/doc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/download.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/github.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/kyzg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/website.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/icon/win10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/presentation/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/presentation/bluescreen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/presentation/donation.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/presentation/wangyiyun.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/wallpapers/login.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/wallpapers/main.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/img/wallpapers/mobile.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/js/disable_shortcuts_hidden.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/js/jquery-2.2.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/js/win10.child.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/js/win10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/MAIN/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/layui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/layui.mobile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/modules/code.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/modules/laydate/default/laydate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/modules/layer/default/icon-ext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/modules/layer/default/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/modules/layer/default/layer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/modules/layer/default/loading-0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/modules/layer/default/loading-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/css/modules/layer/default/loading-2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/font/iconfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/font/iconfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/font/iconfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/font/iconfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/17.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/18.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/19.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/20.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/21.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/22.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/23.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/24.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/25.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/26.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/27.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/28.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/29.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/30.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/31.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/33.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/34.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/35.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/36.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/37.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/38.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/39.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/40.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/41.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/42.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/43.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/44.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/45.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/46.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/47.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/48.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/49.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/50.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/51.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/52.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/53.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/54.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/55.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/56.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/57.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/58.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/59.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/60.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/61.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/62.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/63.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/64.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/65.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/66.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/67.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/68.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/69.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/70.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/71.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/images/face/9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/code.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/flow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/laydate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/layedit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/laypage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/laytpl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/mobile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/tree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/upload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/lay/modules/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/layui.all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layui/layui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/login/justJSP.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/login/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/login/login.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/MAIN/img/windows.ico" afterPath="$PROJECT_DIR$/web/img/windows.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/login/css/register-login.css" afterPath="$PROJECT_DIR$/web/css/register-login.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/login/js/background.js" afterPath="$PROJECT_DIR$/web/js/background.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/login/js/particles.js" afterPath="$PROJECT_DIR$/web/js/particles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/inks/hb/login/dao/LoginDaoImplTest.java" afterPath="$PROJECT_DIR$/src/test/com/inks/hb/login/dao/LoginDaoImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/modules/layer/default/icon-ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/modules/layer/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/modules/layer/default/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/modules/layer/default/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/modules/layer/default/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/font/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/font/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/font/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/11.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/12.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/13.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/14.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/15.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/17.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/18.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/19.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/20.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/21.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/22.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/23.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/25.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/26.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/27.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/28.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/29.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/30.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/31.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/32.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/33.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/34.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/35.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/36.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/37.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/38.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/39.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/40.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/41.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/42.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/43.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/44.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/45.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/46.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/47.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/48.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/49.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/50.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/51.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/52.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/53.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/54.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/55.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/56.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/57.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/58.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/59.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/60.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/61.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/62.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/63.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/64.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/65.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/66.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/67.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/68.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/69.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/7.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/70.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/71.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/images/face/9.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/layui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/layui.mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/modules/code.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/modules/laydate/default/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/css/modules/layer/default/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/font/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/flow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/laydate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/layedit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/laypage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/laytpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/lay/modules/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/layui.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/layui/layui.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -206,21 +152,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="936">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -297,7 +243,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="251" />
     <option name="y" value="232" />
     <option name="width" value="1451" />
@@ -321,9 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -346,7 +290,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,18 +314,18 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.inks.hb.login.dao" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/img" />
       <recent name="$PROJECT_DIR$/web/js" />
       <recent name="$PROJECT_DIR$/web/css" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -622,7 +568,8 @@
       <workItem from="1507902800518" duration="90000" />
       <workItem from="1507903221138" duration="908000" />
       <workItem from="1507978502042" duration="237000" />
-      <workItem from="1507990715604" duration="17000" />
+      <workItem from="1507990715604" duration="122000" />
+      <workItem from="1508031370226" duration="219000" />
     </task>
     <task id="LOCAL-00001" summary="Add description #-#">
       <created>1506657526485</created>
@@ -687,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507903696437</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="作业分支 - 实验一 - 完成">
+      <created>1507990775112</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1507990775112</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -720,7 +674,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42597000" />
+    <option name="totallyTimeSpent" value="42921000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -732,7 +686,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="251" y="232" width="1451" height="756" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -744,11 +698,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5752773" sideWeight="0.2949894" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32698414" sideWeight="0.4957265" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5899054" sideWeight="0.74147123" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5503049" sideWeight="0.7537393" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5868902" sideWeight="0.74147123" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36836734" sideWeight="0.7537393" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13148543" sideWeight="0.53613055" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991472" sideWeight="0.53613055" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12953092" sideWeight="0.46386945" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.251235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -844,7 +798,8 @@
     <MESSAGE value="修正前端文件" />
     <MESSAGE value="系统迁移到Deepin上了，这次同步的应该是layui框架" />
     <MESSAGE value="作业分支 - 实验一" />
-    <option name="LAST_COMMIT_MESSAGE" value="作业分支 - 实验一" />
+    <MESSAGE value="作业分支 - 实验一 - 完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="作业分支 - 实验一 - 完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -936,7 +891,6 @@
     <entry file="file://$PROJECT_DIR$/web/MAIN/js/win10.child.js" />
     <entry file="file://$PROJECT_DIR$/web/login/js/background.js" />
     <entry file="file://$PROJECT_DIR$/web/login/css/register-login.css" />
-    <entry file="file://$PROJECT_DIR$/web/layui/images/face/0.gif" />
     <entry file="file://$PROJECT_DIR$/web/layui/css/layui.css" />
     <entry file="file://$PROJECT_DIR$/web/layui/layui.all.js" />
     <entry file="file://$PROJECT_DIR$/web/login/js/particles.js" />
@@ -1005,7 +959,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/layui-v2.1.5/layui/layui.js">
+    <entry file="file://$PROJECT_DIR$/web/layui/layui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
@@ -1015,18 +969,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.html">
+    <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="936">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/web/layui/images/face/0.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>
