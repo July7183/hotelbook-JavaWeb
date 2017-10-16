@@ -1,4 +1,4 @@
-package inks.hb.login.model;
+package inks.hb.login.pojo;
 
 public class Login {
 

@@ -1,7 +1,7 @@
 package inks.hb.login.dao;
 
 import inks.hb.common.DBUtil;
-import inks.hb.login.model.Login;
+import inks.hb.login.pojo.Login;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

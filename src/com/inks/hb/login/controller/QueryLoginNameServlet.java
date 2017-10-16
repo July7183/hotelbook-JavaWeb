@@ -1,9 +1,7 @@
 package inks.hb.login.controller;
 
 import com.google.gson.Gson;
-import inks.hb.login.dao.LoginDao;
-import inks.hb.login.dao.LoginDaoImpl;
-import inks.hb.login.model.Login;
+import inks.hb.login.pojo.Login;
 import inks.hb.login.service.LoginService;
 import inks.hb.login.service.LoginServiceImpl;
 

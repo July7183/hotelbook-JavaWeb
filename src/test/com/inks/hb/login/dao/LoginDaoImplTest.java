@@ -2,10 +2,8 @@ package com.inks.hb.login.dao;
 
 import inks.hb.login.dao.LoginDao;
 import inks.hb.login.dao.LoginDaoImpl;
-import inks.hb.login.model.Login;
+import inks.hb.login.pojo.Login;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class LoginDaoImplTest {
 

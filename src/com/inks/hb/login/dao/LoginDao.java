@@ -1,6 +1,6 @@
 package inks.hb.login.dao;
 
-import inks.hb.login.model.Login;
+import inks.hb.login.pojo.Login;
 
 import java.sql.SQLException;
 

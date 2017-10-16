@@ -2,7 +2,7 @@ package inks.hb.login.service;
 
 import inks.hb.login.dao.LoginDao;
 import inks.hb.login.dao.LoginDaoImpl;
-import inks.hb.login.model.Login;
+import inks.hb.login.pojo.Login;
 
 import java.sql.SQLException;
 
