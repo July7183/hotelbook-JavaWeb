@@ -34,3 +34,7 @@ JavaBean本质是实体类，但是在前端界面可以直接调用，把code�
 除此之外，Dao工厂类也恶心的要死，简直是一件事多过一道程序，用工厂类管理DAO不如每一个分到实体类下的文件。
 
 实验三将从本分支与Development衍生出。
+
+## 本项目提交至GitHub，位于myHomeWork2分支
+
+项目地址：[myHomeWork2](https://github.com/inkss/hotelbook-JavaWeb/tree/myHomework2)
