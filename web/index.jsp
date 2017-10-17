@@ -1,9 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8"  %>
-<jsp:useBean id="Login" scope="request" class="inks.hb.login.pojo.Login">
-    <jsp:setProperty name="Login" property="loginName" />
-    <jsp:setProperty name="Login" property="loginPwd" />
-</jsp:useBean>
-
+<html>
 <head>
     <meta charset="utf-8">
     <title>酒店管理系统</title>
@@ -26,7 +22,7 @@
     <div class="cont-main clearfix">
 
         <!--登录区域开始-->
-        <form name="Loginform" id="Loginform" method="post" action="checkLogin.jsp" class="login form">
+        <div class="login form">
             <!--文本输入框-->
             <div class="group">
                 <!--用户名输入框-->
@@ -42,7 +38,7 @@
             <div class="button" id="btnLogin">
                 <button type="submit" class="login-btn register-btn button" id="embed-submit">登录</button>
             </div>
-        </form>
+        </div>
         <!--登录区域结束-->
         <!--尾注-->
         <div class="remember clearfix">
@@ -57,9 +53,55 @@
     <p>© 2017 <a href="#">HotelBook System</a></p>
 </div>
 
-<!--导入LW Background-->
+<!--导入LW Background、jquery、layUi-->
 <script type="text/javascript" src='js/particles.js'></script>
 <script type="text/javascript" src='js/background.js'></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+
+<script>
+
+    //模块化调用layui
+    layui.use(['layer'], function(){
+        var layer = layui.layer;
+        $(document).ready(function () {
+            //alert("网页加载完毕");
+
+            //按钮点击事件
+            $('#btnLogin').click(function () {
+                //alert("按钮被点击");
+
+                var loginName = $('#loginName').val();
+                var loginPwd = $('#loginPwd').val();
+                var baseUrl="http://localhost:8080";
+                var params = "loginName=" + loginName + "&loginPwd=" + loginPwd;
+
+                if(loginName == "")
+                    layer.tips("请输入用户名", "#loginName");    //layer.tips(“string","#吸附容器")
+                else if(loginPwd == "")
+                    layer.tips("请输入密码", "#loginPwd");
+                else {
+                    //发出ajax请求，调用后端功能
+                    $.post(baseUrl + '/QueryLoginNameServlet', params, function (data) {
+                        if (data == -1)
+                            layer.msg("用户名不存在");
+                        else if (data == 0)
+                            layer.msg("密码不正确");
+                        else {
+                            layer.msg('登录成功', {
+                                icon: 16
+                                , shade: 0.01
+                            });
+                            setTimeout(function () {
+                                location.href = 'main.html';
+                            }, 1000);   //等待一段时间后跳入
+                        }
+                    });
+                }
+            });  //button
+        });      //jquery
+    });          //layui
+</script>
 
 </body>
 </html>
