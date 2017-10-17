@@ -13,6 +13,11 @@ public class Login {
     public Login() {
         super();
         loginAdmin = -1;
+        //关于权限标志
+        //默认生成的空对象统一置-1
+        //最高权限为0
+        //权限0 1 2 3 等等
+        //分级再说
     }
 
     public Login(String loginName, String loginPwd) {

@@ -1,5 +1,9 @@
-<!DOCTYPE html>
-<html lang="zh">
+<%@ page contentType="text/html;charset=UTF-8"  %>
+<jsp:useBean id="Login" scope="request" class="inks.hb.login.pojo.Login">
+    <jsp:setProperty name="Login" property="loginName" />
+    <jsp:setProperty name="Login" property="loginPwd" />
+</jsp:useBean>
+
 <head>
     <meta charset="utf-8">
     <title>酒店管理系统</title>
@@ -22,7 +26,7 @@
     <div class="cont-main clearfix">
 
         <!--登录区域开始-->
-        <div class="login form">
+        <form name="Loginform" id="Loginform" method="post" action="checkLogin.jsp" class="login form">
             <!--文本输入框-->
             <div class="group">
                 <!--用户名输入框-->
@@ -38,7 +42,7 @@
             <div class="button" id="btnLogin">
                 <button type="submit" class="login-btn register-btn button" id="embed-submit">登录</button>
             </div>
-        </div>
+        </form>
         <!--登录区域结束-->
         <!--尾注-->
         <div class="remember clearfix">
@@ -53,50 +57,9 @@
     <p>© 2017 <a href="#">HotelBook System</a></p>
 </div>
 
-<!--导入LW Background、jquery、layUi-->
+<!--导入LW Background-->
 <script type="text/javascript" src='js/particles.js'></script>
 <script type="text/javascript" src='js/background.js'></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="layui/layui.js"></script>
-
-<script>
-
-    //模块化调用layui
-    layui.use(['layer'], function(){
-        var layer = layui.layer;
-        $(document).ready(function () {
-            //alert("网页加载完毕");
-
-            //按钮点击事件
-            $('#btnLogin').click(function () {
-                //alert("按钮被点击");
-
-                var loginName = $('#loginName').val();
-                var loginPwd = $('#loginPwd').val();
-                //alert(loginName+loginPwd);
-
-                if(loginName == "")
-                    layer.tips("请输入用户名", "#loginName");    //layer.tips(“string","#吸附容器")
-                else if(loginPwd == "")
-                    layer.tips("请输入密码", "#loginPwd");
-                else if(loginName != "root")
-                    layer.msg("用户名不存在");
-                else if(loginPwd != "toor")
-                    layer.msg("密码不正确");
-                else {
-                    layer.msg('登录成功', {
-                        icon: 16
-                        ,shade: 0.01
-                    });
-                    setTimeout(function() {
-                        location.href = 'main.html';
-                    }, 1000);   //等待一段时间后跳入
-                }
-
-            });  //button
-        });      //jquery
-    });          //layui
-</script>
 
 </body>
 </html>
