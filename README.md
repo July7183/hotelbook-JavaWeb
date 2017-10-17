@@ -25,8 +25,10 @@
          |-- layui                  //layui框架
          |-- WEB-INF
         
+## 简述
 
+基本上使用了Ajax来通信
 
 ## 本项目提交至GitHub，位于myHomeWork3分支
 
-项目地址：[myHomeWork2](https://github.com/inkss/hotelbook-JavaWeb/tree/myHomework3)
+项目地址：[myHomeWork3](https://github.com/inkss/hotelbook-JavaWeb/tree/myHomework3)
