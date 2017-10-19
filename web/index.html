@@ -9,6 +9,7 @@
 
 <body>
 
+    <!--此为背景box-->
     <div id="box"></div>
 
     <!--主栏-->
@@ -75,13 +76,13 @@
                     var loginPwd = $('#loginPwd').val();
                     //alert(loginName+loginPwd);
 
-                    if(loginName == "")
+                    if(loginName === "")
                         layer.tips("请输入用户名", "#loginName");    //layer.tips(“string","#吸附容器")
-                    else if(loginPwd == "")
+                    else if(loginPwd === "")
                         layer.tips("请输入密码", "#loginPwd");
-                    else if(loginName != "root")
+                    else if(loginName !== "root")
                         layer.msg("用户名不存在");
-                    else if(loginPwd != "toor")
+                    else if(loginPwd !== "toor")
                         layer.msg("密码不正确");
                     else {
                         layer.msg('登录成功', {
@@ -93,9 +94,9 @@
                         }, 1000);   //等待一段时间后跳入
                     }
 
-                });  //button
-            });      //jquery
-        });          //layui
+                });  //<-button
+            });      //<-jquery
+        });          //<-layui
     </script>
 
 </body>

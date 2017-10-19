@@ -8,13 +8,17 @@
 
 本实验为纯前端编写，不验证数据库。所以可以单独运行。
 
-登录数据为写死的：loginID:**root** Password:**toor**
+登录数据为写死的：loginID:root | Password:toor
+
+登录时，采用对按钮的点击事件进行判断，同时比较文本框中的值。
 
 使用到前端框架有：
 
 * [layui](http://www.layui.com/)
 
 * [LW Background](https://codepen.io/lammworks/pen/xGReXb)
+
+* [jQuery](http://jquery.com)
 
 ## 本项目提交至GitHub，位于myHomeWork分支
 
