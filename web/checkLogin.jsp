@@ -1,10 +1,11 @@
+<%@ page import="java.sql.SQLException" %>
 <%@ page contentType="text/html;charset=UTF-8"  %>
 <jsp:useBean id="Login" scope="request" class="inks.hb.login.pojo.Login">
     <jsp:setProperty name="Login" property="loginName" />
     <jsp:setProperty name="Login" property="loginPwd" />
 </jsp:useBean>
-<jsp:useBean id="checkLogin" class="inks.hb.login.dao.LoginQuery"></jsp:useBean>
-
+<jsp:useBean id="checkLogin" class="inks.hb.login.service.LoginQuery"></jsp:useBean>
+<html>
 <head>
     <meta charset="utf-8">
     <title>酒店管理系统</title>
@@ -21,7 +22,13 @@
         var layer = layui.layer;
         $(document).ready(function () {
             <%
-                int num = checkLogin.loginQuery(Login);
+                int num = 0;
+                try {
+                        num = checkLogin.loginQuery(Login);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                    out.println("alert('出现一些错误'); ");
+                }
                 switch (num){
                     case 0:
                         out.println("alert('用户密码错误'); ");

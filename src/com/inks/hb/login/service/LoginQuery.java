@@ -1,5 +1,7 @@
-package inks.hb.login.dao;
+package inks.hb.login.service;
 
+import inks.hb.login.dao.LoginDAOFactory;
+import inks.hb.login.dao.LoginDao;
 import inks.hb.login.pojo.Login;
 
 import java.sql.SQLException;
@@ -10,7 +12,7 @@ public class LoginQuery {
         LoginDao loginDao = LoginDAOFactory.instance().getLoginDao();
         Login loginer = loginDao.queryByName(login.getLoginName());
 
-        loginer.toString();
+        System.out.println(loginer.toString());
 
         if (loginer.getLoginAdmin() == -1)
             return -1;  //用户不存在

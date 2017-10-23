@@ -3,7 +3,7 @@
     <jsp:setProperty name="Login" property="loginName" />
     <jsp:setProperty name="Login" property="loginPwd" />
 </jsp:useBean>
-
+<html>
 <head>
     <meta charset="utf-8">
     <title>酒店管理系统</title>

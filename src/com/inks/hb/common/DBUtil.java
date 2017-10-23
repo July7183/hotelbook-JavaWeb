@@ -42,14 +42,11 @@ public class DBUtil {
             threadLocal.set(conn);
 
             // 测试语句
-            System.out.println("连接池取出连接：" + conn);
+            //System.out.println("连接池取出连接：" + conn);
         }
 
         // 测试语句
-        System.out.println("当前数据库连接：" + conn
-                + "\n剩余空闲连接数=" + dataSource.getNumIdleConnections()
-                + "\n总连接数＝" + dataSource.getNumConnections());
-        System.out.println();
+        //System.out.println("当前数据库连接：" + conn + "\n剩余空闲连接数=" + dataSource.getNumIdleConnections() + "\n总连接数＝" + dataSource.getNumConnections());
 
         return conn;
     }
@@ -57,7 +54,6 @@ public class DBUtil {
     public static void close() {
         // 从本地线程中获得连接
         Connection conn = threadLocal.get();
-
         try {
             // 在连接不为空 且 没关闭时
             if (conn != null && !conn.isClosed()) {

@@ -24,10 +24,13 @@
          |-- js
          |-- layui                  //layui框架
          |-- WEB-INF
-        
-## 关于JavaBean
+       
+---
 
+## 关于实验二
 
-## 本项目提交至GitHub，位于myHomeWork2分支
+题目：通过jsp和javaBean来完成登陆的验证,用户名的验证需要通过数据库的访问完成,数据库访问通过DAO层.
 
-项目地址：[myHomeWork2](https://github.com/inkss/hotelbook-JavaWeb/tree/myHomework2)
+## 关于GitHub
+
+当前项目位于myHomeWork2分支，项目地址：[myHomeWork2](https://github.com/inkss/hotelbook-JavaWeb/tree/myHomework2)
