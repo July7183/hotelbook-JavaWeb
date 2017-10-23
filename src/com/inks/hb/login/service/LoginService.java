@@ -7,6 +7,6 @@ import java.sql.SQLException;
 
 public interface LoginService {
 
-    Login queryByName(String name) throws SQLException;
+    int queryByName(String name,String pwd) throws SQLException;
 
 }

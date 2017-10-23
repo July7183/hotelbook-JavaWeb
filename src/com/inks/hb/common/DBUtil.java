@@ -8,7 +8,6 @@ import java.sql.SQLException;
 
 /**
  * 数据库工具类 - 使用连接池进行连接
- * c3p0可以自动回收空闲的连接～～～
  */
 public class DBUtil {
 
@@ -41,11 +40,30 @@ public class DBUtil {
             conn = dataSource.getConnection();
             // 设置到threadLocal中
             threadLocal.set(conn);
+
+            // 测试语句
+            //System.out.println("连接池取出连接：" + conn);
         }
 
         // 测试语句
-        //System.out.println("获得数据库连接：" + conn + "剩余空闲连接数=" + dataSource.getNumIdleConnections());
+        //System.out.println("当前数据库连接：" + conn + "\n剩余空闲连接数=" + dataSource.getNumIdleConnections() + "\n总连接数＝" + dataSource.getNumConnections());
 
         return conn;
+    }
+
+    public static void close() {
+        // 从本地线程中获得连接
+        Connection conn = threadLocal.get();
+        try {
+            // 在连接不为空 且 没关闭时
+            if (conn != null && !conn.isClosed()) {
+                // 解除绑定
+                threadLocal.set(null);
+                // 关闭连接
+                conn.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

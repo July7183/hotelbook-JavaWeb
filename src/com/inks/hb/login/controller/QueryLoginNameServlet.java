@@ -37,23 +37,12 @@ public class QueryLoginNameServlet extends HttpServlet {
         String loginName = request.getParameter("loginName");
         String loginPwd = request.getParameter("loginPwd");
 
-        //System.out.printf("\nServlet得到的loginName值为：" + loginName);
-
         try {
 
-            Login login = service.queryByName(loginName);
-            System.out.println(login.toString());
-
-            int check = 0;
-
-            if (login.getLoginAdmin() == -1)
-                check = -1;
-            else if (login.getLoginPwd().equals(loginPwd))
-                check = 1;
+            int check = service.queryByName(loginName,loginPwd);
 
             //转换为json字符串格式
             Gson gson = new Gson();
-
             out.print(gson.toJson(check));
 
         } catch (SQLException e) {
