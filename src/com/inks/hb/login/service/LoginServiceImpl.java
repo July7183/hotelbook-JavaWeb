@@ -15,7 +15,7 @@ public class LoginServiceImpl implements LoginService{
 
         Login login = loginDao.queryByName(name);
 
-        System.out.println(login.toString());
+        //System.out.println(login.toString());
 
         //判断用代码放在业务层
 
@@ -26,5 +26,11 @@ public class LoginServiceImpl implements LoginService{
             check = 1;  //登录成功
 
         return check;
+    }
+
+    @Override
+    public Login queryLogin(String name) throws SQLException {
+
+        return loginDao.queryByName(name);
     }
 }

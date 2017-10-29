@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>酒店管理系统</title>
-    <link rel='Shortcut Icon' type='image/x-icon' href='img/windows.ico'>
-    <link rel="stylesheet" type="text/css" href="css/register-login.css">
+    <link rel="stylesheet Icon" href="img/windows.ico">
+    <link rel="stylesheet" type="text/css" href="./css/login/register-login.css">
 </head>
-
 <body>
 
 <div id="box"></div>
@@ -53,11 +52,14 @@
     <p>© 2017 <a href="#">HotelBook System</a></p>
 </div>
 
-<!--导入LW Background、jquery、layUi-->
-<script type="text/javascript" src='js/particles.js'></script>
-<script type="text/javascript" src='js/background.js'></script>
+<script type="text/javascript" src="./js/login/particles.js"></script>
+<script type="text/javascript" src="./js/login/background.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/Cookie.js"></script>
+
+//引入win10的api
+<script type="text/javascript" src="MAIN/js/win10.child.js"></script>
 
 <script>
 
@@ -92,6 +94,26 @@
                                 icon: 16
                                 , shade: 0.01
                             });
+
+                            //根据写入的session值得到结果
+                            $.post(baseUrl + '/QueryLoginInfoServlet', function (loginInfo) {
+
+                                //数据返回样例
+                                <%--{"loginId":1,"loginName":"root","loginPwd":"toor","loginNickName":"管理员","loginAdmin":0}--%>
+
+                                //取值方法
+                                var obj = JSON.parse(loginInfo);
+                                //alert(obj.loginName);
+                                //alert(obj.loginPwd);
+                                //alert(obj.loginNickName);
+                                //alert(obj.loginAdmin);
+
+                                //设置cookie
+                                setCookie("loginName",loginName);
+                                setCookie("loginNickName",obj.loginNickName);
+                                setCookie("loginAdmin",obj.loginAdmin);
+                            });
+
                             setTimeout(function () {
                                 location.href = 'main.html';
                             }, 1000);   //等待一段时间后跳入
