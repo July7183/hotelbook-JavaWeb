@@ -1,6 +1,7 @@
 package inks.hb.login.dao;
 
 public abstract class LoginDAOFactory {
+
     private static LoginDAOFactory factory = new JdbcDAOFactory();
 
     public static LoginDAOFactory instance() {
