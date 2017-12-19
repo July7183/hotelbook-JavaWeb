@@ -36,8 +36,8 @@
                         <a class="but" href="javascript:;" style="color: #FFFFFF">Sign In</a>
                     </div>
                 </form>
-                <div id="footer">
-                    <a href="register.html">
+                <div id="footer" >
+                    <a href="javascript:;">
                         No account number? Sign up for one.
                     </a>
                 </div>
@@ -64,6 +64,24 @@
         var layer = layui.layer;
         $(document).ready(function () {
             //alert("网页加载完毕");
+
+            //新增
+            $('#footer').click(function () {
+                layer.open({
+                    title: "新增",
+                    btn: ['关闭'],
+                    yes: function (index) {
+                        layer.close(index); //关闭弹窗
+                    },
+                    type: 2,
+                    area: ['450px', '400px'],
+                    fixed: false,
+                    maxmin: true,
+                    content: '/register.jsp'
+                });
+
+            });
+
 
             //按钮点击事件
             $('#btnLogin').click(function () {

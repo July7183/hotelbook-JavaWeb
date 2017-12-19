@@ -24,13 +24,6 @@
                 </a>
             </li>
         </ul>
-        <ul class="layui-nav layui-layout-right">
-            <li class="layui-nav-item" >
-                <a href="./MAIN/main.html" target="_blank">
-                    <i class="layui-icon" >&#xe735; 桌面布局<span class="layui-badge-dot layui-bg-orange"></span></i>
-                </a>
-            </li>
-        </ul>
     </div>
 </div>
 
