@@ -2,6 +2,7 @@ package com.july.hb.billInfo.service;
 
 import com.july.hb.billInfo.dao.BillDao;
 import com.july.hb.billInfo.pojo.BillInfo;
+import com.july.hb.checkin.pojo.CheckinInfo;
 import com.july.hb.checkin.service.CheckinServiceImpl;
 
 import java.sql.SQLException;
@@ -68,8 +69,6 @@ public class BillServiceImpl implements BillService {
             return null;
         }
     }
-
-
 
     @Override
     public BillInfo query(String billId) {

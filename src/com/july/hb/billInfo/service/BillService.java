@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public interface BillService {
     //增添
-    int insertBillInfo(BillInfo billInfo);
+    int insertBillInfo(BillInfo billId);
 
     //删除
     int deleteBillInfo(String billId);

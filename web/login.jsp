@@ -37,8 +37,8 @@
                     </div>
                 </form>
                 <div id="footer" >
-                    <a href="javascript:;">
-                        No account number? Sign up for one.
+                    <a href="visit.html">
+                        Not a member? Come in and know the information.
                     </a>
                 </div>
             </div>

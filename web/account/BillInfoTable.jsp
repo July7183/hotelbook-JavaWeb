@@ -125,7 +125,7 @@
 
                 }else if(layEvent === 'edit') {
                     //编辑
-                    layer.open({
+                   layer.open({
                         title: "提交",
                         btn: ['关闭'],
                         yes: function(index) {
@@ -151,6 +151,8 @@
                     });
                 }
             });
+
+
             //搜索
             $('#searchButton').click(function() {
                 var inputTxt = $('#inputSearch').val();
