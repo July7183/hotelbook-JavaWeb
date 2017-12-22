@@ -29,11 +29,11 @@ public class CheckinDao implements CommonDao {
         pstmt.setString(7, checkinInfo.getArriveTime());
         pstmt.setString(8, checkinInfo.getLeaveTime());
         pstmt.setString(9, checkinInfo.getCheckState());
-        pstmt.setInt(10, Integer.parseInt(checkinInfo.getCheckNum()));
+        pstmt.setInt(10, checkinInfo.getCheckNum());
         pstmt.setString(11, checkinInfo.getRoomId());
         pstmt.setString(12, checkinInfo.getPrice());
         pstmt.setString(13, checkinInfo.getCheckPrice());
-        pstmt.setInt(14, Integer.parseInt(checkinInfo.getDiscount()));
+        pstmt.setInt(14,checkinInfo.getDiscount());
         pstmt.setString(15, "");
         pstmt.setString(16, "");
         pstmt.setString(17, "");
@@ -85,11 +85,11 @@ public class CheckinDao implements CommonDao {
         pstmt.setString(6, checkinInfo.getArriveTime());
         pstmt.setString(7, checkinInfo.getLeaveTime());
         pstmt.setString(8, checkinInfo.getCheckState());
-        pstmt.setInt(9, Integer.parseInt(checkinInfo.getCheckNum()));
+        pstmt.setInt(9, checkinInfo.getCheckNum());
         pstmt.setString(10, checkinInfo.getRoomId());
         pstmt.setString(11, checkinInfo.getPrice());
         pstmt.setString(12, checkinInfo.getCheckPrice());
-        pstmt.setInt(13, Integer.parseInt(checkinInfo.getDiscount()));
+        pstmt.setInt(13, checkinInfo.getDiscount());
         pstmt.setString(14, "");
         pstmt.setString(15, "");
         pstmt.setString(16, "");
@@ -140,12 +140,12 @@ public class CheckinDao implements CommonDao {
         while (rs.next()) {
             checkinInfo = new CheckinInfo(rs.getString(1), rs.getString(3), rs.getString(4)
                     , rs.getString(5), rs.getString(7), rs.getString(8)
-                    , Integer.toString(rs.getInt(10)), "", rs.getString(6), rs.getString(11)
-                    , rs.getString(12), rs.getString(13), Integer.toString(rs.getInt(14))
+                    , rs.getInt(10), "", rs.getString(6), rs.getString(11)
+                    , rs.getString(12), rs.getString(13), rs.getInt(14)
                     , rs.getString(18), rs.getString(19), rs.getString(9), rs.getString(20)
                     , rs.getString(21), rs.getString(22), rs.getString(23));
-            if (checkinInfo.getDiscount().equals("0"))
-                checkinInfo.setDiscount("10");
+            if (checkinInfo.getDiscount()==0)
+                checkinInfo.setDiscount(10);
             list.add(checkinInfo);
         }
 
@@ -170,8 +170,8 @@ public class CheckinDao implements CommonDao {
         while (rs.next()) {
             checkinInfo = new CheckinInfo(rs.getString(1), rs.getString(3), rs.getString(4)
                     , rs.getString(5), rs.getString(7), rs.getString(8)
-                    , Integer.toString(rs.getInt(10)), "", rs.getString(6), rs.getString(11)
-                    , rs.getString(12), rs.getString(13), Integer.toString(rs.getInt(14))
+                    , rs.getInt(10), "", rs.getString(6), rs.getString(11)
+                    , rs.getString(12), rs.getString(13), rs.getInt(14)
                     , rs.getString(18), rs.getString(19), rs.getString(9), rs.getString(20)
                     , rs.getString(21), rs.getString(22), rs.getString(23));
         }
@@ -179,8 +179,8 @@ public class CheckinDao implements CommonDao {
             checkinInfo = new CheckinInfo();
             checkinInfo.setNull(true);
         } else if (checkinInfo != null){
-            if (checkinInfo.getDiscount().equals("0"))
-                checkinInfoQuery.setDiscount("10");
+            if (checkinInfo.getDiscount()==0)
+                checkinInfoQuery.setDiscount(10);
         }
         rs.close();
         pstmt.close();
@@ -201,8 +201,8 @@ public class CheckinDao implements CommonDao {
         while (rs.next()) {
             checkinInfoQuery = new CheckinInfo(rs.getString(1), rs.getString(3), rs.getString(4)
                     , rs.getString(5), rs.getString(7), rs.getString(8)
-                    , Integer.toString(rs.getInt(10)), "", rs.getString(6), rs.getString(11)
-                    , rs.getString(12), rs.getString(13), Integer.toString(rs.getInt(14))
+                    , rs.getInt(10), "", rs.getString(6), rs.getString(11)
+                    , rs.getString(12), rs.getString(13), rs.getInt(14)
                     , rs.getString(18), rs.getString(19), rs.getString(9), rs.getString(20)
                     , rs.getString(21), rs.getString(22), rs.getString(23));
         }
@@ -211,14 +211,45 @@ public class CheckinDao implements CommonDao {
             checkinInfoQuery = new CheckinInfo();
             checkinInfoQuery.setNull(true);
         } else {
-            if (checkinInfoQuery.getDiscount().equals("0"))
-                checkinInfoQuery.setDiscount("10");
+            if (checkinInfoQuery.getDiscount()==0)
+                checkinInfoQuery.setDiscount(10);
+        }
+
+        rs.close();
+        pstmt.close();
+        return checkinInfoQuery;
+    }
+
+
+    public ArrayList queryCheckin(int make, String select) throws SQLException {
+        Connection conn = DBUtil.getConnection();
+
+        String sql ;
+        if (make == 1)
+            sql = "select * from checkinInfo WHERE checkininfo.checkName LIKE ?;";
+        else
+            sql = "select * from orderinfo WHERE typeId LIKE ?;";
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, "%" + select + "%");
+
+        ResultSet rs = pstmt.executeQuery();
+        ArrayList<CheckinInfo> list = new ArrayList<>();
+        CheckinInfo checkinInfo;
+
+        while (rs.next()) {
+            checkinInfo = new CheckinInfo(rs.getString(1), rs.getString(3), rs.getString(4)
+                    , rs.getString(5), rs.getString(7), rs.getString(8)
+                    , rs.getInt(10), "", rs.getString(6), rs.getString(11)
+                    , rs.getString(12), rs.getString(13), rs.getInt(14)
+                    , rs.getString(18), rs.getString(19), rs.getString(9), rs.getString(20)
+                    , rs.getString(21), rs.getString(22), rs.getString(23));
+            list.add(checkinInfo);
         }
 
         rs.close();
         pstmt.close();
 
-        return checkinInfoQuery;
-
+        return list;
     }
+
 }

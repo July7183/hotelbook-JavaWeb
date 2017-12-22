@@ -20,7 +20,7 @@ public class BillDao implements CommonDao
 
         String sql = "INSERT INTO billinfo (billId, checkId, costMoney, costDate, remark) VALUES (?,?,?,?,?)";
         PreparedStatement pstmt = conn.prepareStatement(sql);
-        pstmt.setInt(1, billInfo.getBillId());
+        pstmt.setString(1,billInfo.getBillId());
         pstmt.setString(2,billInfo.getCheckId());
         pstmt.setString(3,billInfo.getCostMoney());
         pstmt.setString(4,billInfo.getCostDate());
@@ -39,7 +39,7 @@ public class BillDao implements CommonDao
 
         String sql = "DELETE FROM billinfo WHERE billId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
-        pstmt.setInt(1, billInfo.getBillId());
+        pstmt.setString(1,billInfo.getBillId());
         pstmt.executeUpdate();
 
         pstmt.close();
@@ -58,7 +58,7 @@ public class BillDao implements CommonDao
         pstmt.setString(2, billInfo.getCostDate());
         pstmt.setString(3, billInfo.getCostDate());
         pstmt.setString(4, billInfo.getRemark());
-        pstmt.setInt(5, billInfo.getBillId());
+        pstmt.setString(5,billInfo.getBillId());
         pstmt.executeUpdate();
         pstmt.close();
     }
@@ -96,7 +96,7 @@ public class BillDao implements CommonDao
         BillInfo billInfo;
 
         while (rs.next()) {
-            billInfo = new BillInfo(rs.getInt(1), rs.getString(2), rs.getString(3)
+            billInfo = new BillInfo(rs.getString(1), rs.getString(2), rs.getString(3)
                     , rs.getString(4), rs.getString(5) );
             list.add(billInfo);
         }
@@ -115,12 +115,12 @@ public class BillDao implements CommonDao
 
         String sql = "SELECT * FROM billinfo WHERE billId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
-        pstmt.setInt(1, billInfoQuery.getBillId());
+        pstmt.setString(1, billInfoQuery.getBillId());
         ResultSet rs = pstmt.executeQuery();
 
         BillInfo billInfo = null;
         while (rs.next()) {
-            billInfo = new BillInfo(rs.getInt(1),rs.getString(2), rs.getString(3)
+            billInfo = new BillInfo(rs.getString(1),rs.getString(2), rs.getString(3)
                     , rs.getString(4), rs.getString(5) );
         }
 
@@ -134,18 +134,18 @@ public class BillDao implements CommonDao
         return billInfo;
     }
 
-    public BillInfo queryName(int billId) throws SQLException {
+    public BillInfo queryName(String billId) throws SQLException {
 
         Connection conn = DBUtil.getConnection();
 
         String sql = "SELECT * FROM billinfo WHERE billId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
-        pstmt.setInt(1, billId);
+        pstmt.setString(1, billId);
         ResultSet rs = pstmt.executeQuery();
 
         BillInfo billInfoQuery = null;
         while (rs.next()) {
-            billInfoQuery = new BillInfo(rs.getInt(1), rs.getString(2), rs.getString(3)
+            billInfoQuery = new BillInfo(rs.getString(1), rs.getString(2), rs.getString(3)
                     , rs.getString(4), rs.getString(5) );
          }
 

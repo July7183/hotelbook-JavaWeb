@@ -2,7 +2,7 @@ package com.july.hb.billInfo.pojo;
 
 public class BillInfo {
 
-    private int billId;
+    private String billId;
     private String checkId;
     private String costMoney;
     private String costDate;
@@ -13,7 +13,7 @@ public class BillInfo {
     public BillInfo() {
     }
 
-    public BillInfo(int billId, String checkId, String costMoney, String costDate, String remark) {
+    public BillInfo(String billId, String checkId, String costMoney, String costDate, String remark) {
         this.billId = billId;
         this.checkId = checkId;
         this.costMoney = costMoney;
@@ -21,11 +21,11 @@ public class BillInfo {
         this.remark = remark;
     }
 
-    public int getBillId() {
+    public String getBillId() {
         return billId;
     }
 
-    public void setBillId(int billId) {
+    public void setBillId(String billId) {
         this.billId = billId;
     }
 
@@ -72,7 +72,7 @@ public class BillInfo {
     @Override
     public String toString() {
         return "BillInfo{" +
-                "billId=" + billId +
+                "billId=" + billId +'\'' +
                 ", checkId='" + checkId + '\'' +
                 ", costMoney='" + costMoney + '\'' +
                 ", costDate='" + costDate + '\'' +

@@ -10,7 +10,7 @@ public interface BillService {
     int insertBillInfo(BillInfo billInfo);
 
     //删除
-    int deleteBillInfo(int billId);
+    int deleteBillInfo(String billId);
 
     //更新
     int updateBillInfo(BillInfo billInfo);
@@ -19,7 +19,7 @@ public interface BillService {
     ArrayList query(int page, int limit);
 
     //查询单条
-    BillInfo query(int billId);
+    BillInfo query(String billId);
 
     //查询长度
      int queryBillNum();
@@ -30,5 +30,5 @@ public interface BillService {
      * @return 0:已经存在 1：未存在
      * @throws SQLException 数据库
      */
-    int queryRepeat(int billId);
+    int queryRepeat(String billId);
 }

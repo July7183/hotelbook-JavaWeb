@@ -22,11 +22,27 @@
 </head>
 
 <body>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <legend>
+        <div>
+            <div class="layui-inline">
+                <div class="layui-input-inline">
+                    <input class="layui-input" id="inputSearch" placeholder="预定人">
+                </div>
+                <button class="layui-btn fa fa-search layui-btn-normal" id="searchButton"> 搜索</button>
+            </div>
+            <div class="layui-inline">
+                <button class="layui-btn fa fa-refresh layui-btn-normal" id="refreshButton"> 刷新</button>
+            </div>
 
+        </div>
+    </legend>
+</fieldset>
 <div id="toxlsTable">
     <table id="tableID"></table>
 </div>
 <script type="text/html" id="barAuth">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
 <script>
@@ -49,12 +65,12 @@
                         fixed: true
                     }, {
                         field: 'checkName',
-                        title: '预定人',
+                        title: '入住人',
                         sort: true,
                         width: 180
                     }, {
                         field: 'checkPhone',
-                        title: '预定电话',
+                        title: '联系电话',
                         width: 180
                     }, {
                         field: 'checkIDcard',
@@ -129,7 +145,7 @@
                         title: '管理',
                         align: 'center',
                         toolbar: '#barAuth',
-                        width: 100,
+                        width: 150,
                         fixed: 'right'
                     }]
                 ],
@@ -151,7 +167,7 @@
                 if (layEvent === 'del') {
                     layer.confirm('您确定要删除该条数据吗？', {
                         offset: '180px',
-                        btn: ['是滴', '手滑']
+                        btn: ['是', '取消']
                     }, function () {
                         table.reload('tableID', {
                             where: {
@@ -174,12 +190,62 @@
                             offset: '250px'
                         });
                     });
+                }else if(layEvent === 'edit') {
+            //编辑
+            layer.open({
+                title: "提交",
+                btn: ['关闭'],
+                yes: function(index) {
+                    tableIns.reload({
+                        where: {
+                            make: 0
+                        }
+                    });
+                    layer.close(index); //关闭弹窗
+                },
+                type: 2,
+                area: ['1080px', '520px'],
+                fixed: false,
+                maxmin: true,
+                content:'./updateCheckin.jsp',
+                cancel: function() {
+                    tableIns.reload({
+                        where: {
+                            make: 0
+                        }
+                    });
                 }
-
-
             });
-
-
+        }
+    });
+            //搜索
+            $('#searchButton').click(function() {
+                var inputTxt = $('#inputSearch').val();
+                if(inputTxt === "")
+                    layer.msg('请输入顾客姓名', {
+                        offset: '250px'
+                    });
+                else {
+                    tableIns.reload({
+                        where: {
+                            make: 3,
+                            checkName: inputTxt
+                        }
+                    });
+                    layer.msg('搜索结果如表所示', {
+                        offset: '250px'
+                    });
+                }
+            });
+    //刷新
+    $('#refreshButton').click(function() {
+        tableIns.reload({
+            where: {
+                make: 0,
+                page: 1
+            }
+        });
+    });
             //回到顶端
             util.fixbar({
                 showHeight: 2,

@@ -34,7 +34,16 @@
     <legend>
         <div>
             <div class="layui-inline">
-                <button class="layui-btn fa fa-save" id="toXlsButton"> 导出</button>
+                <div class="layui-input-inline">
+                    <input class="layui-input" id="inputSearch" placeholder="账单编号">
+                </div>
+                <button class="layui-btn fa fa-search layui-btn-normal" id="searchButton"> 搜索</button>
+            </div>
+            <div class="layui-inline">
+                <button class="layui-btn fa fa-refresh layui-btn-normal" id="refreshButton"> 刷新</button>
+            </div>
+            <div class="layui-inline">
+                <button class="layui-btn fa fa-save" id="toXlsButton">生成账单报表</button>
             </div>
         </div>
     </legend>
@@ -46,6 +55,7 @@
 </div>
 
 <script type="text/html" id="barAuth">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
 
@@ -70,7 +80,7 @@
                     , {field: 'costMoney', title: '消费金额', width: 150}
                     , {field: 'costDate', title: '消费时间', width: 150}
                     , {field: 'remark', title: '备注'}
-                    , {field: 'right', title: '工具', align: 'center', toolbar: '#barAuth', width: 200, fixed: 'right'}
+                    , {field: 'right', title: '管理', align: 'center', toolbar: '#barAuth', width: 150, fixed: 'right'}
 
                 ]]
                 , page: true
@@ -113,14 +123,70 @@
                         });
                     });
 
+                }else if(layEvent === 'edit') {
+                    //编辑
+                    layer.open({
+                        title: "提交",
+                        btn: ['关闭'],
+                        yes: function(index) {
+                            tableIns.reload({
+                                where: {
+                                    make: 0
+                                }
+                            });
+                            layer.close(index); //关闭弹窗
+                        },
+                        type: 2,
+                        area: ['1080px', '520px'],
+                        fixed: false,
+                        maxmin: true,
+                        content:'/web/account/updateAccount.jsp',
+                        cancel: function() {
+                            tableIns.reload({
+                                where: {
+                                    make: 0
+                                }
+                            });
+                        }
+                    });
                 }
             });
+            //搜索
+            $('#searchButton').click(function() {
+                var inputTxt = $('#inputSearch').val();
+                if(inputTxt === "")
+                    layer.msg('请输入账单编号', {
+                        offset: '250px'
+                    });
+                else {
+                    tableIns.reload({
+                        where: {
+                            make: 3,
+                            billId: inputTxt
+                        }
+                    });
+                    layer.msg('搜索结果如表所示', {
+                        offset: '250px'
+                    });
+                }
+            });
+
+            //刷新
+            $('#refreshButton').click(function() {
+                tableIns.reload({
+                    where: {
+                        make: 0,
+                        page: 1
+                    }
+                });
+            });
+
 
 
             //导出
             $('#toXlsButton').click(function () {
                 location.href = baseUrl + '/ToExcelServlet';
-                layer.alert('Excel文件生成完成！', {
+                layer.alert('账单报表生成完成！', {
                     title: '成功',
                     icon: 6,
                     anim: 1,

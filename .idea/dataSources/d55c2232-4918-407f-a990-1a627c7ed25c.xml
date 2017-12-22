@@ -2,7 +2,7 @@
 <dataSource name="@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
     <root id="1">
-      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultCasing>exact</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="hotelbook">
       <Current>1</Current>
@@ -13,7 +13,7 @@
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="4" parent="1" name="mysql">
-      <Collation>utf8_general_ci</Collation>
+      <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="5" parent="1" name="performance_schema">
       <Collation>utf8_general_ci</Collation>
@@ -979,7 +979,7 @@
     <column id="244" parent="230" name="billId">
       <Position>1</Position>
       <Comment>账单编号</Comment>
-      <DataType>int(11)|0</DataType>
+      <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>

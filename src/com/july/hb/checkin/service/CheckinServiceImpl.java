@@ -53,12 +53,12 @@ public class CheckinServiceImpl implements CheckinService {
     public int updateCheckinInfo(CheckinInfo checkinInfo) {
         try {
             dao.updateData(checkinInfo);
-            return 1;
         } catch (SQLException e) {
             System.out.println(e.getErrorCode() + e.getMessage());
             e.printStackTrace();
             return -1;
         }
+        return 1;
     }
 
     @Override
@@ -109,7 +109,7 @@ public class CheckinServiceImpl implements CheckinService {
             for (Object i : list1) {
                 checkinInfo = (CheckinInfo) i;
                 price = Long.parseLong(checkinInfo.getPrice());
-                discount = Long.parseLong(checkinInfo.getDiscount());
+                discount = checkinInfo.getDiscount();
                 orderMoney = Long.parseLong(checkinInfo.getOrderMoney());
                 begin = df.parse(checkinInfo.getArriveTime());
                 end = df.parse(checkinInfo.getLeaveTime());
@@ -140,6 +140,20 @@ public class CheckinServiceImpl implements CheckinService {
             return -1;
         }
     }
+
+
+    public ArrayList queryCheckin(int make, String select) {
+
+
+        try {
+            return dao.queryCheckin(make, select);
+        } catch (SQLException e) {
+            System.out.println(e.getErrorCode() + e.getMessage());
+            return null;
+        }
+    }
+
+
 
     @Override
     public int queryRepeat(String checkName) {

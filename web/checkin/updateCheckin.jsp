@@ -1,19 +1,30 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: july
+  Date: 17-12-22
+  Time: 下午1:48
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <head>
+
     <meta charset="utf-8">
-    <title>入住单</title>
+    <title>酒店管理系统</title>
     <link rel="stylesheet" href="../js/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../MAIN/component/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="../js/layui/layui.js"></script>
     <script src="../js/jquery.js"></script>
     <script src="../js/global.js"></script>
     <script src="../js/Cookie.js"></script>
+
 </head>
 
+
 <body>
+
 <fieldset class="layui-elem-field layui-field-title " style="margin-top: 20px;">
-    <legend>酒店管理 - 入住单</legend>
+    <legend>酒店管理 - 入住单修改</legend>
 </fieldset>
 
 <form class="layui-form">
@@ -209,118 +220,134 @@
             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </div>
-
-
 </form>
 
 <script>
 
-    layui.use(['form', 'layedit', 'laydate'], function () {
-        var form = layui.form,
-            layer = layui.layer,
-            layedit = layui.layedit,
-            laydate = layui.laydate;
+      layui.use(['form', 'layedit', 'laydate'], function () {
+          var form = layui.form,
+              layer = layui.layer,
+              layedit = layui.layedit,
+              laydate = layui.laydate;
+          var isCheck = false;
+
+          var checkId = getCookie("checkId");
+          deleteCookie("checkId"); //取到值就麻溜的删
+          var queryId = "checkId=" + checkId;
 
 
-        laydate.render({
-            elem: '#arriveTime'
-        });
-        laydate.render({
-            elem: '#leaveTime'
-        });
-        laydate.render({
-            elem: '#checkDate'
-        });
-
-        //设置ID（读取的时间）
-        var time = new Date().getTime();
-        $(document).ready(function () {
-            $("#checkId").val("CI" + time);
-        });
-
-
-
-
-        //分配房号
-        $('#buildRoomId').on('click', function () {
-            time = new Date().getTime().toString();
-            var floor = $("#floorId").val();
-            var type = $("#typeId").val();
-            var num = time.substring(9);
-            $("#roomId").val(floor + num);
-            return false;
-        });
-
-        //监听提交
-        form.on('submit(insertRome)', function (data) {
-
-
-            //先获取值
-            var checkId = $('#checkId').val();
-            var checkName = $('#checkName').val();
-            var checkPhone = $('#checkPhone').val();
-            var checkIDcard = $('#checkIDcard').val();
-            var arriveTime = $('#arriveTime').val();
-            var leaveTime = $('#leaveTime').val();
-            var checkNum = $('#checkNum').val();
-            var typeId = $('#typeId').val();
-            var floorId = $('#floorId').val();
-            var roomId = $('#roomId').val();
-            var price = $('#price').val();
-            var checkPrice = $('#checkPrice').val();
-            var discount = $('#discount').val();
-            var orderMoney = $('#orderMoney').val();
-            var money = $('#money').val();
-            var checkState = $('#checkState').val();
-            var isCheck = $('#isCheck').val();
-            var checkMoney = $('#checkMoney').val();
-            var checkDate = $('#checkDate').val();
-            var remark = $('#remark').val();
-
-            var params = "checkId=" + checkId + "&checkName=" + checkName + "&checkPhone=" + checkPhone +
-                "&checkIDcard=" + checkIDcard + "&arriveTime=" + arriveTime + "&leaveTime=" + leaveTime +
-                "&checkNum=" + checkNum + "&typeId=" + typeId + "&floorId=" + floorId +
-                "&roomId=" + roomId + "&price=" + price + "&checkPrice=" + checkPrice +
-                "&discount=" + discount + "&orderMoney=" + orderMoney + "&money=" + money +
-                "&checkState=" + checkState + "&isCheck=" + isCheck +"&checkMoney=" + checkMoney + "&checkDate=" + checkDate +
-                "&remark=" + remark + "&make=1";
+          //分配房号
+          $('#buildRoomId').on('click', function () {
+              time = new Date().getTime().toString();
+              var floor = $("#floorId").val();
+              var type = $("#typeId").val();
+              var num = time.substring(9);
+              $("#roomId").val(floor + num);
+              return false;
+          });
 
 
 
 
-            $.post(baseUrl + '/UpdateCheckinServlet',  params, function (data) {
-                if (data === '1') {
-                    layer.alert('登记成功！', {
-                        title: '新增成功',
+          // 开始赋值
+          $.post(baseUrl + '/QueryCheckinInfoServlet', queryId, function(checkinInfo) {
+              var obj = JSON.parse(checkinInfo);
+              $("#checkId").val(checkId);
+              $("#checkName").val(obj.checkName);
+              $("#checkPhone").val(obj.checkPhone);
+              $("#checkIDcard").val(obj.checkIDcard);
+              $("#arriveTime").val(obj.arriveTime);
+              $("#leaveTime").val(obj.leaveTime);
+              $("#checkNum").val(obj.checkNum);
+              $("#typeId").val(obj.typeId); //<--需要处理
+              form.render("select"); //重新渲染select
+              $("#floorId").val(obj.floorId); //<--需要处理
+              form.render("select"); //重新渲染select
+              $("#roomId").val(obj.roomId);
+              $("#price").val(obj.price);
+              $("#checkPrice").val(obj.checkPrice);
+              $("#discount").val(obj.discount);
+              $("#orderMoney").val(obj.orderMoney);
+              $("#money").val(obj.money);
+              $("#checkState").val(obj.checkState); //<--需要处理
+              form.render("select"); //重新渲染select
+              $("#isCheck").val(obj.isCheck);
+              $("#checkMoney").val(obj.checkMoney);
+              $("#checkDate").val(obj.checkDate);
+              $("#remark").val(obj.remark);
+          });
+
+          //日期
+          laydate.render({
+              elem: '#arriveTime'
+          });
+          laydate.render({
+              elem: '#leaveTime'
+          });
+          laydate.render({
+              elem: '#checkDate'
+          });
+
+
+
+
+          //监听提交
+          form.on('submit(insertRome)', function (data) {
+
+
+           //先获取值
+              var checkId = $('#checkId').val();
+              var checkName = $('#checkName').val();
+              var checkPhone = $('#checkPhone').val();
+              var checkIDcard = $('#checkIDcard').val();
+              var arriveTime = $('#arriveTime').val();
+              var leaveTime = $('#leaveTime').val();
+              var checkNum = $('#checkNum').val();
+              var typeId = $('#typeId').val();
+              var floorId = $('#floorId').val();
+              var roomId = $('#roomId').val();
+              var price = $('#price').val();
+              var checkPrice = $('#checkPrice').val();
+              var discount = $('#discount').val();
+              var orderMoney = $('#orderMoney').val();
+              var money = $('#money').val();
+              var checkState = $('#checkState').val();
+              var isCheck = $('#isCheck').val();
+              var checkMoney = $('#checkMoney').val();
+              var checkDate = $('#checkDate').val();
+              var remark = $('#remark').val();
+
+              var params = "checkId=" + checkId + "&checkName=" + checkName + "&checkPhone=" + checkPhone +
+                  "&checkIDcard=" + checkIDcard + "&arriveTime=" + arriveTime + "&leaveTime=" + leaveTime +
+                  "&checkNum=" + checkNum + "&typeId=" + typeId + "&floorId=" + floorId +
+                  "&roomId=" + roomId + "&price=" + price + "&checkPrice=" + checkPrice +
+                  "&discount=" + discount + "&orderMoney=" + orderMoney + "&money=" + money +
+                  "&checkState=" + checkState + "&isCheck=" + isCheck +"&checkMoney=" + checkMoney + "&checkDate=" + checkDate +
+                  "&remark=" + remark + "&make=2";
+
+
+            $.post(baseUrl+'/UpdateCheckinServlet', params, function(data) {
+                if(data === '1') {
+                    layer.alert('修改入住单成功！', {
+                        title: '修改成功',
                         icon: 6,
                         shade: 0.6,
                         anim: 3,
-                        offset: '220px'
-                    });
-                } else if (data === '0') {
-                    layer.alert('存在相同字段！', {
-                        title: '新增失败',
-                        icon: 5,
-                        shade: 0.6,
-                        anim: 6,
-                        offset: '220px'
+                        offset: '0px'
                     });
                 } else {
-                    layer.alert('登记失败！', {
-                        title: '新增失败',
+                    layer.alert('修改入住单失败！', {
+                        title: '修改失败',
                         icon: 2,
                         shade: 0.6,
                         anim: 6,
-                        offset: '220px'
+                        offset: '0px'
                     });
                 }
             });
-
             return false;
         });
-
     });
 </script>
 </body>
-
 </html>

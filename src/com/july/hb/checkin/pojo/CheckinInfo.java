@@ -8,13 +8,13 @@ public class CheckinInfo {
     private String checkIDcard; //身份证
     private String arriveTime; //抵店时间
     private String leaveTime; //离店时间
-    private String checkNum; //入住人数
+    private int checkNum; //入住人数
     private String floorId; //楼层类型
     private String typeId; //房间类型
     private String roomId; //房号
     private String price; //客房价格
     private String checkPrice; //入住价格
-    private String discount; //折扣
+    private int discount; //折扣
     private String orderMoney; //预收款
     private String money; //应收款
     private String checkState; //单据状态
@@ -26,9 +26,10 @@ public class CheckinInfo {
     private boolean isNull;
 
     public CheckinInfo() {
+        super();
     }
 
-    public CheckinInfo(String checkId, String checkName, String checkPhone, String checkIDcard, String arriveTime, String leaveTime, String checkNum, String floorId, String typeId, String roomId, String price, String checkPrice, String discount, String orderMoney, String money, String checkState, String isCheck, String checkMoney, String checkoutDate, String remark) {
+    public CheckinInfo(String checkId, String checkName, String checkPhone, String checkIDcard, String arriveTime, String leaveTime, int checkNum, String floorId, String typeId, String roomId, String price, String checkPrice, int discount, String orderMoney, String money, String checkState, String isCheck, String checkMoney, String checkoutDate, String remark) {
         this.checkId = checkId;
         this.checkName = checkName;
         this.checkPhone = checkPhone;
@@ -103,11 +104,11 @@ public class CheckinInfo {
         this.leaveTime = leaveTime;
     }
 
-    public String getCheckNum() {
+    public int  getCheckNum() {
         return checkNum;
     }
 
-    public void setCheckNum(String checkNum) {
+    public void setCheckNum(int checkNum) {
         this.checkNum = checkNum;
     }
 
@@ -151,11 +152,11 @@ public class CheckinInfo {
         this.checkPrice = checkPrice;
     }
 
-    public String getDiscount() {
+    public int getDiscount() {
         return discount;
     }
 
-    public void setDiscount(String discount) {
+    public void setDiscount(int discount) {
         this.discount = discount;
     }
 
@@ -236,13 +237,13 @@ public class CheckinInfo {
                 ", checkIDcard='" + checkIDcard + '\'' +
                 ", arriveTime='" + arriveTime + '\'' +
                 ", leaveTime='" + leaveTime + '\'' +
-                ", checkNum='" + checkNum + '\'' +
+                ", checkNum='" + checkNum +
                 ", floorId='" + floorId + '\'' +
                 ", typeId='" + typeId + '\'' +
                 ", roomId='" + roomId + '\'' +
                 ", price='" + price + '\'' +
                 ", checkPrice='" + checkPrice + '\'' +
-                ", discount='" + discount + '\'' +
+                ", discount='" + discount +
                 ", orderMoney='" + orderMoney + '\'' +
                 ", money='" + money + '\'' +
                 ", checkState='" + checkState + '\'' +

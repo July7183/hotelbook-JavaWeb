@@ -53,7 +53,7 @@ public class InsertBillInfoServlet extends HttpServlet {
         BillInfo billInfo = new BillInfo();
         Date day = new Date();
         SimpleDateFormat df = new SimpleDateFormat("yyMMddHHmm");
-        billInfo.setBillId(Integer.parseInt(df.format(day)));
+        billInfo.setBillId(df.format(day));
         billInfo.setCheckId(checkinInfo.getCheckId());
         billInfo.setCostMoney(checkinInfo.getCheckMoney());
         billInfo.setCostDate(checkinInfo.getCheckoutDate());

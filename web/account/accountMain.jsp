@@ -9,7 +9,7 @@
 
 
 <frameset cols="200,*" frameborder="0">
-    <frame name="nav" src="accountNav.jsp" />
+    <frame name="nav" src="accountLeft.jsp" />
     <frame name="account" src="../welcome.jsp" />
 </frameset>
 
