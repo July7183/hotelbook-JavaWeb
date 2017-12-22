@@ -18,7 +18,7 @@ public class CheckinDao implements CommonDao {
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "INSERT INTO checkinInfo () VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO checkininfo () VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, checkinInfo.getCheckId());
         pstmt.setString(2, ""); //在不改变数据库结构的情况下直接赋空值，以下同理
@@ -56,7 +56,7 @@ public class CheckinDao implements CommonDao {
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "DELETE FROM checkinInfo WHERE checkId = ?";
+        String sql = "DELETE FROM checkininfo WHERE checkId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, checkinInfo.getCheckId());
 
@@ -70,7 +70,7 @@ public class CheckinDao implements CommonDao {
         CheckinInfo checkinInfo = (CheckinInfo) o;
         Connection conn = DBUtil.getConnection();
 
-        String sql = "UPDATE checkinInfo SET orderId = ? ,checkName = ? ,checkPhone = ? ,checkIDcard = ?," +
+        String sql = "UPDATE checkininfo SET orderId = ? ,checkName = ? ,checkPhone = ? ,checkIDcard = ?," +
                 "typeId = ?,arrireTime = ?,leaveTime = ? ,checkState = ? ,checkNum = ? , roomId = ?,price = ? ," +
                 "checkPrice = ?,discount = ? ,discountReason = ?,addBed = ? ,addBedPrice = ?,orderMoney = ? ," +
                 "money = ?,isCheck = ?,checkMoney = ? ,checkDate = ? ,remark = ?,operatorId = ? " +
@@ -110,7 +110,7 @@ public class CheckinDao implements CommonDao {
     public int queryDataNum() throws SQLException {
         Connection conn = DBUtil.getConnection();
 
-        String sql = "select count(*) from checkinInfo;";
+        String sql = "select count(*) from checkininfo;";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         ResultSet rs = pstmt.executeQuery();
 
@@ -128,7 +128,7 @@ public class CheckinDao implements CommonDao {
     public ArrayList query(int start, int length) throws SQLException {
         Connection conn = DBUtil.getConnection();
 
-        String sql = "select * from checkinInfo limit ?, ?;";
+        String sql = "select * from checkininfo limit ?, ?;";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setInt(1, start - 1);
         pstmt.setInt(2, length);
@@ -161,7 +161,7 @@ public class CheckinDao implements CommonDao {
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "SELECT * FROM checkinInfo WHERE checkId = ?";
+        String sql = "SELECT * FROM checkininfo WHERE checkId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, checkinInfoQuery.getCheckId());
         ResultSet rs = pstmt.executeQuery();
@@ -192,7 +192,7 @@ public class CheckinDao implements CommonDao {
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "SELECT * FROM checkinInfo WHERE checkId = ?";
+        String sql = "SELECT * FROM checkininfo WHERE checkId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, checkName);
         ResultSet rs = pstmt.executeQuery();

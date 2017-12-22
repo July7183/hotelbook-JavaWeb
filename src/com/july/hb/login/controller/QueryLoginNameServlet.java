@@ -34,21 +34,17 @@ public class QueryLoginNameServlet extends HttpServlet {
 
         // 调用service
         LoginService service = new LoginServiceImpl();
-        MD5 md5 = new MD5();
 
-        // 获得姓名
-        String loginName = request.getParameter("loginName");
-        String loginPwd = md5.getMD5(request.getParameter("loginPwd"));  //转成MD5存储
+
+
+        // 对于此功能，就直接从session中取值
+        HttpSession session = request.getSession();
+        String loginName = (String) session.getAttribute("LoginName");
 
         try {
-            int check = service.queryByName(loginName, loginPwd);
-            if (check == 1) { // 设置session
-                HttpSession session = request.getSession();
-                session.setAttribute("LoginName", loginName);
-                Login login = service.queryLogin(loginName);
-            }
+            Login login = service.queryLogin(loginName);
             Gson gson = new Gson();
-            out.print(gson.toJson(check));
+            out.print(gson.toJson(login));
         } catch (SQLException e) {
             e.printStackTrace();
         }

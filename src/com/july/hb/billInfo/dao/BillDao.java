@@ -18,7 +18,7 @@ public class BillDao implements CommonDao
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "INSERT INTO billInfo (billId, checkId, costMoney, costDate, remark) VALUES (?,?,?,?,?)";
+        String sql = "INSERT INTO billinfo (billId, checkId, costMoney, costDate, remark) VALUES (?,?,?,?,?)";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setInt(1, billInfo.getBillId());
         pstmt.setString(2,billInfo.getCheckId());
@@ -37,7 +37,7 @@ public class BillDao implements CommonDao
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "DELETE FROM billInfo WHERE billId = ?";
+        String sql = "DELETE FROM billinfo WHERE billId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setInt(1, billInfo.getBillId());
         pstmt.executeUpdate();
@@ -51,7 +51,7 @@ public class BillDao implements CommonDao
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "UPDATE billInfo SET checkId = ? ,costMoney = ? ,costDate = ? ,remark = ?  WHERE billId = ?";
+        String sql = "UPDATE billinfo SET checkId = ? ,costMoney = ? ,costDate = ? ,remark = ?  WHERE billId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
 
         pstmt.setString(1, billInfo.getCheckId());
@@ -68,7 +68,7 @@ public class BillDao implements CommonDao
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "select count(*) from billInfo;";
+        String sql = "select count(*) from billinfo;";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         ResultSet rs = pstmt.executeQuery();
 
@@ -86,7 +86,7 @@ public class BillDao implements CommonDao
     public ArrayList query(int start, int length) throws SQLException {
         Connection conn = DBUtil.getConnection();
 
-        String sql = "select * from billInfo limit ?, ?;";
+        String sql = "select * from billinfo limit ?, ?;";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setInt(1, start - 1);
         pstmt.setInt(2, length);
@@ -113,7 +113,7 @@ public class BillDao implements CommonDao
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "SELECT * FROM billInfo WHERE billId = ?";
+        String sql = "SELECT * FROM billinfo WHERE billId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setInt(1, billInfoQuery.getBillId());
         ResultSet rs = pstmt.executeQuery();
@@ -138,7 +138,7 @@ public class BillDao implements CommonDao
 
         Connection conn = DBUtil.getConnection();
 
-        String sql = "SELECT * FROM billInfo WHERE billId = ?";
+        String sql = "SELECT * FROM billinfo WHERE billId = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setInt(1, billId);
         ResultSet rs = pstmt.executeQuery();
